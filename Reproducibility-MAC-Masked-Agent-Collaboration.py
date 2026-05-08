@@ -339,7 +339,10 @@ def calculate_min_fuzzy_score_indices(results):
 async def main():
     scenario_loader = ScenarioLoaderMedQA()
 
-    for _scenario_id in [67, 100]:
+    num_scenarios = 655 
+    scenario_star = 0
+
+    for _scenario_id in range(scenario_star, min(num_scenarios, scenario_loader.num_scenarios)): 
 
         print("🚇 ======================== ======================== ======================== ", file=file_out)
         print("🆔 scenario_id:", _scenario_id, file=file_out)
