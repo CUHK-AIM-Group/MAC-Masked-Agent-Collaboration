@@ -53,9 +53,3 @@ The script currently reads:
 ```
 
 Please make sure this file exists before running.
-
-## 6) Quick troubleshooting
-
-- `Connection refused` or model request failed: check `ollama serve` is running.
-- `model not found`: run `ollama run <model_name>` first.
-- `CUDA out of memory`: reduce number/size of models, or use larger GPU memory.
